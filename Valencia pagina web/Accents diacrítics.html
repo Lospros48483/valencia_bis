@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="Valencia">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accents diacrítics</title>
+    <style>
+
+        body {
+            background-color: rgb(80, 182, 89);
+        }
+        h1 {
+            color: rgb(252, 40, 40);
+            text-align: center;
+            size: 50px;
+            text-shadow: 2px 2px 5px black;
+            font-style: bold;
+            font-family: sans-serif
+        } 
+        
+        h2 {
+            color: rgb(59, 59, 228);
+            text-align: left;
+            text-shadow: 1px 1px 1px black;
+            size: 50px;
+            font-style: bold;
+            font-family: sans-serif
+        }
+
+        .button {
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 150px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+       }
+    </style>
+</head>
+<body>
+    <h1>Accents diacrítics</h1>
+    <h2>Accents diacrítics són algunes paraules que sonen igual però tenen diferent significat (ensenyat per un una titlla oberta o tancada). uns exemples són:</h2>
+    <embed src="Teoria de l'accent diacrític.pdf" type="application/pdf" width="1000" height="500">
+    <h2>Però els accents diacrític autèntics que són 15. so:</h2>
+    <img src="Accents diacrítics.png" alt="Accents diacrítics" width="500" height="450">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rlbZRD-hlMM?si=4rlE90jGZ6mx2_b5" title="Accents diacrítics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <a href="Valencia.html">
+        <button class="button"><span>Tornar </span></button>
+    </a>
+</body>
+</html>
